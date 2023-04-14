@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nextFocusRight="@id/blfNavBar"/>
+
+    <androidx.leanback.widget.BrowseFrameLayout
+        android:id="@+id/blfNavBar"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:nextFocusLeft="@id/container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:text="Search"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+            <TextView
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="Home"
+                android:drawablePadding="16dp"
+                android:drawableLeft="@drawable/ic_home"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btn_movies"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_movie"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:text="Movies"
+                android:layout_height="45dp"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+            <TextView
+                android:id="@+id/btn_tv"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_tv"
+                android:layout_marginLeft="16dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:text="TV"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+            <TextView
+                android:id="@+id/btn_sports"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_sports"
+                android:layout_marginLeft="16dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:text="Sports"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+            <TextView
+                android:id="@+id/btn_settings"
+                android:layout_width="match_parent"
+                android:layout_marginTop="32dp"
+                android:drawableLeft="@drawable/ic_settings"
+                android:layout_marginLeft="16dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:text="Settings"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+            <TextView
+                android:id="@+id/btn_language"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_language"
+                android:layout_marginLeft="16dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:text="Language"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+            <TextView
+                android:id="@+id/btn_genre"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_genre"
+                android:layout_marginLeft="16dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="16dp"
+                android:text="Genre"
+                android:focusable="true"
+                android:background="@drawable/selector_menu"
+                android:textColor="@color/text_selector_white_grey"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.leanback.widget.BrowseFrameLayout>
+
+</merge>
